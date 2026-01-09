@@ -44,4 +44,40 @@ The algorithm proceeds as follows:
 
 ---
 
-## File Structure
+### File Structure
+#### Important Note for Users
+The matrix A, vector b, and initial guess x₀ provided in this code are *examples only.*
+To solve your own problem, you must:
+- Replace A with your own symmetric positive definite matrix.
+
+- Replace b with your corresponding vector.
+
+- Provide an appropriate initial guess x₀.
+
+- The algorithm will then compute an approximate solution for your system.
+
+
+*Note: Code Explanation*
+
+The Python script performs the following steps:
+- Defines the matrix A and vector b
+- Initializes the starting guess x₀
+- Defines orthogonal search directions
+- Computes residuals at each iteration
+- Updates the solution iteratively
+- Computes the exact solution using NumPy
+- Evaluates accuracy using the relative infinity norm
+
+
+
+## 📈 
+
+The program prints:
+
+The solution after the first iteration (x1)
+
+The solution after the second iteration (x2)
+
+The relative error compared to the exact solution
+
+*all depends on your matrices and vectors you're working it*
