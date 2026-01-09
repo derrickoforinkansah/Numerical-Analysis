@@ -1,8 +1,8 @@
 # Numerical-Analysis
 Solving Conjugate Gradient in Numeral Analysis
 ## Solving Linear Systems Using the Conjugate Gradient Method (Python)
-### 📌 Project Overview
-This mini project demonstrates how to solve a system of linear equations using ideas from the **Conjugate Gradient (CG) method** in numerical analysis. The implementation is written in **Python** using NumPy and focuses on iterative approximation of the solution to:
+### Project Overview
+This  project demonstrates how to solve a system of linear equations using ideas from the **Conjugate Gradient (CG) method** in numerical analysis. The implementation is written in **Python** using NumPy and focuses on iterative approximation of the solution to:
 [Ax = b]
 where:
 - (A) is a **symmetric and positive definite matrix**
@@ -10,7 +10,7 @@ where:
 The project illustrates how the solution improves across iterations and evaluates accuracy using a relative error measure.
 
 ---
-## 📐 Mathematical Background
+### Mathematical Background
 The Conjugate Gradient method is an efficient iterative algorithm for solving large linear systems without computing matrix inverses. It works by:
 - Starting from an initial guess
 - Iteratively updating the solution along **An-orthogonal (conjugate) directions**
@@ -20,34 +20,18 @@ In this implementation:
 - Each iteration updates the solution using a scalar step size
 - The final approximation is compared to the true solution
   
-  ## 🧮 Problem Definition
+### Problem Definition
 We solve the linear system:
 
-\[
-A =
-\begin{bmatrix}
-3 & -1 & 1 \\
--1 & 6 & 2 \\
-1 & 2 & 7
-\end{bmatrix},
-\quad
-b =
-\begin{bmatrix}
-1 \\
-0 \\
-4
-\end{bmatrix}
-\]
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/a42f7d61-4717-47de-ab8b-4f4100d30469" />
 
 with an initial guess:
 
-\[
-x_0 = \begin{bmatrix} 0 & 0 & 0 \end{bmatrix}
-\]
+<img width="320" height="300" alt="image" src="https://github.com/user-attachments/assets/694f4b6b-c435-445a-9081-1fd0005710df" />
 
 ---
 
-## 🛠️ Implementation Details
+### Implementation Details
 The algorithm proceeds as follows:
 
 1. Define the matrix \(A\) and vector \(b\)
@@ -60,4 +44,4 @@ The algorithm proceeds as follows:
 
 ---
 
-## 📂 File Structure
+## File Structure
